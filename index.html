@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+	<title>Test task 2</title>
+	<link rel="stylesheet" href="TestTask2.css">
+  </head>
+  <body class="page">
+	<main class="page__main">
+	  <div class="page__block page__block_column">
+	    <h1 class="page__label">Simon Says</h1>
+		<div class="page__block page__block_main-content page__block_row">
+		  <div class="game__field">
+		    <div class="page__block page__block_row">
+			  <div value="1" class="game__tile game__tile_blue">
+			  </div>
+			  <div value="2" class="game__tile game__tile_red">
+			  </div>
+			</div>
+			<div class="page__block page__block_row">
+			  <div value="3" class="game__tile game__tile_yellow">
+			  </div>
+			  <div value="4" class="game__tile game__tile_green">
+			  </div>
+			</div>
+		  </div>
+		  <div class="page__block page__block_column" id="game">
+		    <div class="page__block page__block_column">
+			  <h2 class="page__label">Round: {{round}}</h2>
+			  <button ref="button" class="page__button">Start</button>
+			</div>
+			<div class="page__block page__block_column">
+			  <h2 class="page__label">Difficult</h2>
+			  <div class="page__block page__block_row">
+			    <input name="difficult" value="1500" v-model="time" type="radio" checked><p class="page__text">Easy</p>
+			  </div>
+			  <div class="page__block page__block_row">
+			    <input name="difficult" value="1000" v-model="time" type="radio"><p class="page__text">Normal</p>
+			  </div>
+			  <div class="page__block page__block_row">
+			    <input name="difficult" value="400" v-model="time" type="radio"><p class="page__text">Hard</p>
+			  </div>
+			</div>
+		  </div>
+	  </div>
+	</main>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+	<script src="TestTask2.js"></script>
+  </body>
+</html>
